@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Main starts here
+
+*,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1092%26quot%3b)' fill='none'%3e%3cpath d='M0 407.65L10 410.17L20 411.47L30 476.27L40 431.86L50 408.74L60 470.47L70 507.64L80 489.56L90 476.62L100 519.52L110 465.09L120 414.73L130 416.46L140 405.63L150 403.65L160 377.03L170 416.23L180 480.5L190 549.85L200 551.24L210 495.23L220 476.1L230 454.8L240 439.47L250 482.21L260 494.6L270 498.24L280 492.28L290 432.94L300 431.08L310 421.31L320 485.69L330 533.56L340 497.1L350 504.4L360 552.68L370 487.78L380 540.85L390 478.73L400 449.43L410 470.43L420 427.38L430 434.55L440 369.71L450 364.78L460 297.1L470 279.31L480 262.88L490 301.75L500 314.03L510 286.81L520 240.9L530 292.69L540 302.87L550 292.57L560 339.11L570 367.58L580 351.33L590 338.43L600 286.42L610 284.24L620 327.99L630 358.5L640 402.65L650 380.38L660 445.97L670 491.61L680 464.16L690 439.5L700 414.46L710 430.82L720 438.25L730 403.52L740 395.33L750 329.2L760 369.31L770 380.68L780 319.66L790 297.54L800 323.11L810 313.83L820 338.39L830 370.46L840 426.61L850 391.96L860 351.2L870 287.81L880 264.33L890 208.9L900 262.94L910 253.35L920 292.5L930 297.58L940 242.55L950 209.92L960 233.19L970 165.29L980 133.82L990 129.92L1000 98.8L1010 80.43L1020 101.98L1030 161.24L1040 138.13L1050 170.73L1060 101.53L1070 32.54L1080 36.62L1090 14.55L1100 76.04L1110 38.31L1120 23.51L1130 48.65L1140 106.19L1150 63.09L1160 56.44L1170 69.3L1180 35.32L1190 87.7L1200 120.37L1210 139.37L1220 147.36L1230 158.54L1240 136.11L1250 196.69L1260 132.85L1270 187.29L1280 136.51L1290 156.51L1300 166.04L1310 146.45L1320 117.29L1330 126.58L1340 61.54L1350 61.91L1360 90.99L1370 131.52L1380 135.04L1390 69.74L1400 74.26L1410 22.46L1420 32.54L1430 41.61L1440 95.49' stroke='rgba(70%2c 202%2c 138%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 407.65L10 410.17L20 411.47L30 476.27L40 431.86L50 408.74L60 470.47L70 507.64L80 489.56L90 476.62L100 519.52L110 465.09L120 414.73L130 416.46L140 405.63L150 403.65L160 377.03L170 416.23L180 480.5L190 549.85L200 551.24L210 495.23L220 476.1L230 454.8L240 439.47L250 482.21L260 494.6L270 498.24L280 492.28L290 432.94L300 431.08L310 421.31L320 485.69L330 533.56L340 497.1L350 504.4L360 552.68L370 487.78L380 540.85L390 478.73L400 449.43L410 470.43L420 427.38L430 434.55L440 369.71L450 364.78L460 297.1L470 279.31L480 262.88L490 301.75L500 314.03L510 286.81L520 240.9L530 292.69L540 302.87L550 292.57L560 339.11L570 367.58L580 351.33L590 338.43L600 286.42L610 284.24L620 327.99L630 358.5L640 402.65L650 380.38L660 445.97L670 491.61L680 464.16L690 439.5L700 414.46L710 430.82L720 438.25L730 403.52L740 395.33L750 329.2L760 369.31L770 380.68L780 319.66L790 297.54L800 323.11L810 313.83L820 338.39L830 370.46L840 426.61L850 391.96L860 351.2L870 287.81L880 264.33L890 208.9L900 262.94L910 253.35L920 292.5L930 297.58L940 242.55L950 209.92L960 233.19L970 165.29L980 133.82L990 129.92L1000 98.8L1010 80.43L1020 101.98L1030 161.24L1040 138.13L1050 170.73L1060 101.53L1070 32.54L1080 36.62L1090 14.55L1100 76.04L1110 38.31L1120 23.51L1130 48.65L1140 106.19L1150 63.09L1160 56.44L1170 69.3L1180 35.32L1190 87.7L1200 120.37L1210 139.37L1220 147.36L1230 158.54L1240 136.11L1250 196.69L1260 132.85L1270 187.29L1280 136.51L1290 156.51L1300 166.04L1310 146.45L1320 117.29L1330 126.58L1340 61.54L1350 61.91L1360 90.99L1370 131.52L1380 135.04L1390 69.74L1400 74.26L1410 22.46L1420 32.54L1430 41.61L1440 95.49L1440 560L0 560z' fill='url(%23SvgjsLinearGradient1093)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1092'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='SvgjsLinearGradient1093'%3e%3cstop stop-opacity='0.65' stop-color='rgba(70%2c 202%2c 138%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='white' offset='0.8'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  transition: height 1s;
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  form {
+    input {
+      width: 100%;
+      height: 50px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 4px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      font-size: 1rem;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      margin: 10px 0;
+      height: 40px;
+      border: none;
+      background-color: #707070;
+      color: #fff;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+    }
+    #result {
+      text-align: center;
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAGR Calculator</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/mainImg.svg" alt="growth" />
+      <h1>CAGR Calculator</h1>
+      <form>
+        <input
+          id="principalAmount"
+          type="number"
+          placeholder="Principal Amount"
+        />
+        <input id="growthRate" type="number" placeholder="Growth Rate (%)" />
+        <input
+          id="numberOfPeriods"
+          type="number"
+          placeholder="Number of Periods"
+        />
+        <button type="submit">Calculate Return</button>
+        <p id="result"></p>
+      </form>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
