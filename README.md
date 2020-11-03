@@ -8,3 +8,5 @@ A repo for intensive css practice.
 #3 => https://landingpage8.netlify.app/
 
 #4 => https://cagrcalculator8.netlify.app/
+
+#5 => App Icon Design
