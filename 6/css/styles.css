@@ -1,0 +1,359 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+code {
+  font-family: monospace;
+}
+
+.root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.root .left-wrapper,
+.root .right-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vh;
+}
+
+.root .left-wrapper {
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#000), to(#23232e));
+  background: linear-gradient(to right, #000, #23232e);
+}
+
+.root .left-wrapper .profile-wrapper .usrImg {
+  display: block;
+  margin: 3rem auto 3rem;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.root .left-wrapper .profile-wrapper .bottom {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+}
+
+.root .left-wrapper .profile-wrapper .bottom .divider {
+  height: 40px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.root .left-wrapper .profile-wrapper .bottom .userInfo {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.root .left-wrapper .profile-wrapper .bottom .userInfo h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.root .left-wrapper .more-info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.root .left-wrapper .more-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.root .left-wrapper .more-info .info img {
+  height: 22px;
+  width: 22px;
+  margin-right: 1.5rem;
+}
+
+.root .left-wrapper .participations {
+  margin-left: 8%;
+}
+
+.root .left-wrapper .participations h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.root .left-wrapper .participations .windows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.root .left-wrapper .participations .windows .window {
+  width: 170px;
+  height: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #000;
+  margin: 1rem;
+}
+
+.root .left-wrapper .participations .windows .window img {
+  height: 100%;
+  width: 100%;
+}
+
+.root .right-wrapper {
+  font-size: 1.4rem;
+  font-weight: 100;
+  padding: 2rem;
+  position: relative;
+}
+
+.root .right-wrapper h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.root .right-wrapper .repos {
+  margin-bottom: 2rem;
+}
+
+.root .right-wrapper .repos .repo {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.root .right-wrapper .repos .repo div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.root .right-wrapper .repos .repo div:first-child img {
+  margin-right: 1.5rem;
+}
+
+.root .right-wrapper .repos .repo div:last-child {
+  margin-left: 3rem;
+}
+
+.root .right-wrapper .repos .repo div:last-child span {
+  margin-right: 2rem;
+}
+
+.root .right-wrapper .languages {
+  margin-bottom: 2rem;
+}
+
+.root .right-wrapper .languages span {
+  margin: 1rem;
+}
+
+.root .right-wrapper .commits {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[35];
+      grid-template-columns: repeat(35, 1fr);
+}
+
+.root .right-wrapper .commits .commit {
+  width: 10px;
+  height: 10px;
+  background-color: #7aaa44;
+  margin: 4px;
+  border-radius: 2px;
+}
+
+.root .right-wrapper footer {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
