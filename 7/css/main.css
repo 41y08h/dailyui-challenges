@@ -332,7 +332,6 @@ header nav button {
   position: absolute;
   top: 19px;
   right: 19px;
-  transform: rotate(180deg);
 }
 
 .container .right {
