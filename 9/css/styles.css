@@ -191,6 +191,10 @@ header {
   background-color: #23232e;
 }
 
+header .menuToggle {
+  display: none;
+}
+
 header nav {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -218,6 +222,10 @@ header nav ul li:first-child a {
   border-radius: 50px;
 }
 
+.showSm {
+  display: none;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -227,6 +235,11 @@ header nav ul li:first-child a {
   background: -webkit-gradient(linear, left top, right top, from(#23232e), to(#2c2c36));
   background: linear-gradient(to right, #23232e, #2c2c36);
   padding: 20px;
+  -webkit-transition: 0.3s -webkit-transform;
+  transition: 0.3s -webkit-transform;
+  transition: 0.3s transform;
+  transition: 0.3s transform, 0.3s -webkit-transform;
+  z-index: 1000;
 }
 
 .sidebar .logo {
@@ -240,6 +253,15 @@ header nav ul li:first-child a {
 
 .sidebar .logo img {
   margin-right: 15px;
+}
+
+.sidebar .logo .showSm {
+  margin-left: auto;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  height: 15px;
 }
 
 .sidebar nav {
@@ -260,7 +282,7 @@ header nav ul li:first-child a {
 }
 
 main {
-  padding: 0 50px;
+  padding: 30px 50px;
 }
 
 main .musicInfo {
@@ -278,6 +300,10 @@ main .musicInfo .left h2 {
 main .musicInfo .left img {
   height: 250px;
   width: 250px;
+  -webkit-transition: height width;
+  transition: height width;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 main .musicInfo .right {
@@ -288,6 +314,12 @@ main .musicInfo .right {
 main .musicInfo .right h2 {
   font-size: 50px;
   margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+main .musicInfo .right span,
+main .musicInfo .right p {
+  line-height: 1.1;
 }
 
 main .musicInfo .right .album {
@@ -351,4 +383,74 @@ main .musicInfo .right button:hover {
 
 .playlist table td.durationIcon {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 985px) {
+  .sidebar.slideSm {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .showSm {
+    display: unset;
+  }
+  .hideSm {
+    display: none;
+  }
+  body {
+    padding-left: 0;
+  }
+  .menuToggle {
+    display: unset !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .musicThumbnail {
+    height: 220px !important;
+    width: 220px !important;
+  }
+  main .musicInfo .right h2 {
+    font-size: 2.2rem;
+  }
+  main .musicInfo .right button {
+    height: 40px;
+    width: 40px;
+  }
+  .playlist table tr td:nth-child(4) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .musicInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .playlist table tr td:nth-child(5) {
+    display: none;
+  }
+  main {
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .playlist table {
+    text-align: center;
+  }
+  .playlist table tr td:nth-child(1) {
+    display: none;
+  }
+  .playlist table tr td:nth-child(3) {
+    display: none;
+  }
 }

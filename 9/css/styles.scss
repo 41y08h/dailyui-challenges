@@ -39,6 +39,9 @@ header {
   align-items: center;
   padding: 0 4%;
   background-color: $bg-primary;
+  .menuToggle {
+    display: none;
+  }
   nav {
     width: fit-content;
     margin-left: auto;
@@ -60,6 +63,10 @@ header {
   }
 }
 
+.showSm {
+  display: none;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -68,12 +75,20 @@ header {
   width: 200px;
   background: linear-gradient(to right, $bg-primary, #2c2c36);
   padding: 20px;
+  transition: 0.3s transform;
+  z-index: 1000;
 
   .logo {
     display: flex;
     align-items: center;
     img {
       margin-right: 15px;
+    }
+    .showSm {
+      margin-left: auto;
+      filter: brightness(0) invert(1);
+      transform: rotate(180deg);
+      height: 15px;
     }
   }
   nav {
@@ -94,7 +109,7 @@ header {
 }
 
 main {
-  padding: 0 50px;
+  padding: 30px 50px;
   .musicInfo {
     display: flex;
     margin-bottom: 50px;
@@ -106,6 +121,8 @@ main {
       img {
         height: 250px;
         width: 250px;
+        transition: height width;
+        transition-duration: 0.3s;
       }
     }
     .right {
@@ -114,6 +131,11 @@ main {
       h2 {
         font-size: 50px;
         margin-bottom: 20px;
+        line-height: 1.2;
+      }
+      span,
+      p {
+        line-height: 1.1;
       }
       .album {
         margin-bottom: 8px;
@@ -158,6 +180,94 @@ main {
       padding: 20px 5px;
       &.durationIcon {
         font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  .sidebar {
+    &.slideSm {
+      transform: translateX(-100%);
+    }
+  }
+  .showSm {
+    display: unset;
+  }
+  .hideSm {
+    display: none;
+  }
+  body {
+    padding-left: 0;
+  }
+  .menuToggle {
+    display: unset !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .musicThumbnail {
+    height: 220px !important;
+    width: 220px !important;
+  }
+  main {
+    .musicInfo {
+      .right {
+        h2 {
+          font-size: 2.2rem;
+        }
+        button {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }
+  .playlist {
+    table {
+      tr {
+        td:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .musicInfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .playlist {
+    table {
+      tr {
+        td:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+  main {
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .playlist {
+    table {
+      text-align: center;
+      tr {
+        td:nth-child(1) {
+          display: none;
+        }
+        td:nth-child(3) {
+          display: none;
+        }
       }
     }
   }
